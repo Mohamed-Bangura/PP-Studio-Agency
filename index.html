@@ -114,6 +114,11 @@
     <main id="main-content">
         <!-- Hero Section -->
         <section class="hero">
+            <picture class="hero-bg">
+                <source media="(max-width: 768px)" srcset="assets/images/hero/hero-image-mobile.webp">
+                <source srcset="assets/images/hero/hero-image.webp">
+                <img src="assets/images/hero/hero-image-fallback.jpg" alt="" width="1920" height="1080" fetchpriority="high" aria-hidden="true">
+            </picture>
             <div class="container">
                 <div class="hero-content">
                     <span class="section-label hero-animate">PP Studio Agency</span>
@@ -325,33 +330,12 @@
                 <div class="grid grid-3">
                     <div class="testimonial-card fade-in">
                         <p class="testimonial-text">"PP Studio Agency delivered a professional website that transformed our online presence. The attention to detail and quality is outstanding."</p>
-                        <div class="testimonial-author">
-                            <img src="assets/images/testimonials/client-1.jpg" alt="Sarah Johnson - satisfied client testimonial" class="testimonial-avatar" loading="lazy" width="48" height="48">
-                            <div class="testimonial-info">
-                                <strong>Sarah Johnson</strong>
-                                <span>CEO, TechStart Inc.</span>
-                            </div>
-                        </div>
                     </div>
                     <div class="testimonial-card fade-in">
                         <p class="testimonial-text">"The team created a stunning portfolio that perfectly showcases my work. Their creative vision exceeded all expectations."</p>
-                        <div class="testimonial-author">
-                            <img src="assets/images/testimonials/client-2.jpg" alt="David Chen - satisfied client testimonial" class="testimonial-avatar" loading="lazy" width="48" height="48">
-                            <div class="testimonial-info">
-                                <strong>David Chen</strong>
-                                <span>Freelance Designer</span>
-                            </div>
-                        </div>
                     </div>
                     <div class="testimonial-card fade-in">
                         <p class="testimonial-text">"Excellent work on our agency website. Modern design, smooth functionality, and delivered on time. Highly recommended."</p>
-                        <div class="testimonial-author">
-                            <img src="assets/images/testimonials/client-3.jpg" alt="Emily Rodriguez - satisfied client testimonial" class="testimonial-avatar" loading="lazy" width="48" height="48">
-                            <div class="testimonial-info">
-                                <strong>Emily Rodriguez</strong>
-                                <span>Founder, Bright Ideas Co.</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -378,11 +362,7 @@
                         <img src="assets/images/logo/pp-logo.png" alt="PP Studio Agency Logo" width="50" height="50" loading="lazy">
                     </a>
                     <p>Premium frontend development agency crafting modern, responsive websites for forward-thinking businesses.</p>
-                    <div class="footer-social">
-                        <a href="https://github.com/ppstudioagency" target="_blank" rel="noopener noreferrer" aria-label="PP Studio Agency on GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/company/ppstudioagency" target="_blank" rel="noopener noreferrer" aria-label="PP Studio Agency on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://twitter.com/ppstudioagency" target="_blank" rel="noopener noreferrer" aria-label="PP Studio Agency on Twitter"><i class="fab fa-twitter"></i></a>
-                    </div>
+
                 </div>
                 <div>
                     <h4 class="footer-title">Quick Links</h4>
