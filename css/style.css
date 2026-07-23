@@ -227,6 +227,14 @@ p {
     display: block;
 }
 
+.logo-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-left: 0.5rem;
+    white-space: nowrap;
+}
+
 .nav-menu {
     display: flex;
     gap: 2rem;
