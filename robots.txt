@@ -1,0 +1,13 @@
+# robots.txt for PP Studio Agency
+# https://ppstudioagency.vercel.app/
+
+# Allow all crawl bots full access to crawl and index content
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ppstudioagency.vercel.app/sitemap.xml
+
+# Crawl delay for polite crawling
+Crawl-delay: 10
+
