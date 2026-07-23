@@ -182,37 +182,6 @@ function initScrollToTop() {
     }, 100));
 }
 
-// ===== BUTTON INTERACTIONS =====
-function initButtonInteractions() {
-    document.querySelectorAll('.btn').forEach(btn => {
-        btn.addEventListener('click', function () {
-            if (this.classList.contains('loading')) return;
-
-            this.classList.add('loading');
-            setTimeout(() => {
-                this.classList.remove('loading');
-            }, 1000);
-        });
-    });
-}
-
-// ===== PORTFOLIO ACCESSIBILITY =====
-function initPortfolio() {
-    document.querySelectorAll('.portfolio-card').forEach(card => {
-        const link = card.querySelector('.portfolio-link');
-        if (!link) return;
-
-        card.setAttribute('tabindex', '0');
-        card.setAttribute('role', 'article');
-
-        card.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                link.click();
-            }
-        });
-    });
-}
-
 // ===== INITIALIZE =====
 document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
@@ -220,13 +189,11 @@ document.addEventListener('DOMContentLoaded', () => {
     initFadeInAnimations();
     initFAQ();
     initScrollToTop();
-    initButtonInteractions();
-    initPortfolio();
 
     handleHeaderScroll();
 
     window.addEventListener('scroll', debounce(() => {
         handleHeaderScroll();
         updateActiveNavLink();
-    }, 10));
+    }, 100), { passive: true });
 });

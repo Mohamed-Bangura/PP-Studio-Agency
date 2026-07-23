@@ -16,6 +16,17 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
@@ -349,6 +360,7 @@ p {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    content-visibility: auto;
 }
 
 .hero::before {
@@ -817,31 +829,6 @@ section {
     position: relative;
     padding-left: 1.5rem;
     border-left: 2px solid var(--burgundy);
-}
-
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.testimonial-avatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--burgundy-glow);
-}
-
-.testimonial-info strong {
-    display: block;
-    color: var(--text-heading);
-    font-size: 0.95rem;
-}
-
-.testimonial-info span {
-    font-size: 0.8rem;
-    color: var(--text-muted);
 }
 
 /* ===== CTA SECTION (DARK) ===== */
@@ -1523,11 +1510,22 @@ section {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
 }
 
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+    will-change: auto;
+}
+
+/* ===== CONTENT VISIBILITY ===== */
+.services-section,
+.why-us,
+.process-section,
+.portfolio-section,
+.testimonials-section {
+    contain: layout style;
 }
 
 /* ===== UTILITY CLASSES ===== */

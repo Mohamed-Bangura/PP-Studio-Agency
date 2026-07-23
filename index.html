@@ -20,7 +20,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="PP Studio Agency - Premium Frontend Web Development Agency">
     <meta property="og:description" content="PP Studio Agency is a premium frontend web development agency crafting modern, responsive websites with exceptional UI/UX. Elevate your brand with clean code and performance optimization.">
-    <meta property="og:image" content="https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.png">
+    <meta property="og:image" content="https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.webp">
     <meta property="og:url" content="https://ppstudioagency.vercel.app/">
     <meta property="og:site_name" content="PP Studio Agency">
     <meta property="og:locale" content="en_US">
@@ -29,73 +29,44 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="PP Studio Agency - Premium Frontend Web Development Agency">
     <meta name="twitter:description" content="PP Studio Agency is a premium frontend web development agency crafting modern, responsive websites with exceptional UI/UX. Elevate your brand with clean code and performance optimization.">
-    <meta name="twitter:image" content="https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.png">
+    <meta name="twitter:image" content="https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.webp">
 
-    <!-- Google Analytics -->
-    <!-- TODO: Replace G-XXXXXXXXXX with your actual Google Analytics Measurement ID before deployment -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
+    <!-- Preconnect to critical third-party origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Preload critical hero image (LCP element) -->
+    <link rel="preload" as="image" type="image/avif" href="assets/images/hero/hero-image.avif" fetchpriority="high">
+    <link rel="preload" as="image" type="image/webp" href="assets/images/hero/hero-image.webp" fetchpriority="high">
+
+    <!-- Preload critical fonts (above-the-fold text) -->
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYAZ9hiJ-Ek-_EeA.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/spacegrotesk/v16/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2" crossorigin>
+
+    <!-- Critical stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Fonts: use display=swap for non-blocking render -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome: defer non-critical icon font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Organization",
-                "@id": "https://ppstudioagency.vercel.app/#organization",
-                "name": "PP Studio Agency",
-                "url": "https://ppstudioagency.vercel.app/",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.png",
-                    "width": 50,
-                    "height": 50
-                },
-                "description": "Premium frontend web development agency crafting modern, responsive websites.",
-                "foundingDate": "2024",
-                "contactPoint": {
-                    "@type": "ContactPoint",
-                    "contactType": "customer service",
-                    "availableLanguage": ["English"]
-                }
-            },
-            {
-                "@type": "WebSite",
-                "@id": "https://ppstudioagency.vercel.app/#website",
-                "url": "https://ppstudioagency.vercel.app/",
-                "name": "PP Studio Agency",
-                "description": "Premium Frontend Web Development Agency - Modern, responsive websites and exceptional UI/UX design.",
-                "publisher": {
-                    "@id": "https://ppstudioagency.vercel.app/#organization"
-                },
-                "inLanguage": "en-US"
-            }
-        ]
-    }
+    {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://ppstudioagency.vercel.app/#organization","name":"PP Studio Agency","url":"https://ppstudioagency.vercel.app/","logo":{"@type":"ImageObject","url":"https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.webp","width":50,"height":50},"description":"Premium frontend web development agency crafting modern, responsive websites.","foundingDate":"2024","contactPoint":{"@type":"ContactPoint","contactType":"customer service","availableLanguage":["English"]}},{"@type":"WebSite","@id":"https://ppstudioagency.vercel.app/#website","url":"https://ppstudioagency.vercel.app/","name":"PP Studio Agency","description":"Premium Frontend Web Development Agency - Modern, responsive websites and exceptional UI/UX design.","publisher":{"@id":"https://ppstudioagency.vercel.app/#organization"},"inLanguage":"en-US"}]}
     </script>
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- Skip to content link for accessibility -->
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
     <header class="header" id="header">
         <nav class="navbar container">
             <a href="index.html" class="logo" aria-label="PP Studio Agency - Home">
-                <img src="assets/images/logo/pp-logo.png" alt="PP Studio Agency Logo" width="50" height="50">
+                <img src="assets/images/logo/pp-logo.webp" alt="PP Studio Agency Logo" width="50" height="50">
             </a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
@@ -112,12 +83,13 @@
     </header>
 
     <main id="main-content">
-        <!-- Hero Section -->
         <section class="hero">
             <picture class="hero-bg">
-                <source media="(max-width: 768px)" srcset="assets/images/hero/hero-image-mobile.webp">
-                <source srcset="assets/images/hero/hero-image.webp">
-                <img src="assets/images/hero/hero-image-fallback.jpg" alt="" width="1920" height="1080" fetchpriority="high" aria-hidden="true">
+                <source type="image/avif" media="(max-width: 768px)" srcset="assets/images/hero/hero-image-mobile.avif">
+                <source type="image/avif" srcset="assets/images/hero/hero-image.avif">
+                <source type="image/webp" media="(max-width: 768px)" srcset="assets/images/hero/hero-image-mobile.webp">
+                <source type="image/webp" srcset="assets/images/hero/hero-image.webp">
+                <img src="assets/images/hero/hero-image-fallback.jpg" alt="" width="1920" height="1080" fetchpriority="high" decoding="async" aria-hidden="true">
             </picture>
             <div class="container">
                 <div class="hero-content">
@@ -132,7 +104,6 @@
             </div>
         </section>
 
-        <!-- About Preview Section -->
         <section class="about-preview">
             <div class="container">
                 <div class="about-grid">
@@ -141,16 +112,18 @@
                         <h2>We Build Websites That Matter</h2>
                         <p>PP Studio Agency is a specialized frontend web development agency dedicated to crafting exceptional digital experiences. We combine modern UI/UX design with clean, maintainable code to help businesses establish a powerful online presence.</p>
                         <p>Our mission is to deliver high-quality, responsive frontend solutions that drive real results for businesses and individuals.</p>
-
                     </div>
                     <div class="about-image fade-in">
-                        <img src="assets/images/about/about-preview.jpg" alt="PP Studio Agency team working on modern web design projects" loading="lazy" width="600" height="400">
+                        <picture>
+                            <source type="image/avif" srcset="assets/images/about/about-preview.avif">
+                            <source type="image/webp" srcset="assets/images/about/about-preview.webp">
+                            <img src="assets/images/about/about-preview.jpg" alt="PP Studio Agency team working on modern web design projects" loading="lazy" decoding="async" width="600" height="400">
+                        </picture>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Services Section -->
         <section class="services-section">
             <div class="container">
                 <div class="section-header fade-in">
@@ -198,7 +171,6 @@
             </div>
         </section>
 
-        <!-- Why Choose Us Section -->
         <section class="why-us">
             <div class="container">
                 <div class="section-header fade-in">
@@ -231,7 +203,6 @@
             </div>
         </section>
 
-        <!-- Process Section -->
         <section class="process-section">
             <div class="container">
                 <div class="section-header fade-in">
@@ -264,7 +235,6 @@
             </div>
         </section>
 
-        <!-- Portfolio Section -->
         <section class="portfolio-section">
             <div class="container">
                 <div class="section-header fade-in">
@@ -276,7 +246,11 @@
                     <a href="https://johnson-s-academy.vercel.app" target="_blank" rel="noopener noreferrer" class="portfolio-card-link" aria-label="View Johnson's Academy project">
                     <div class="portfolio-card fade-in">
                         <div class="portfolio-img-wrapper">
-                            <img src="assets/images/projects/johnsons-academy.png" alt="Johnson's Academy - modern educational institution website preview" class="portfolio-img" loading="lazy" width="400" height="220">
+                            <picture>
+                                <source type="image/avif" srcset="assets/images/projects/johnsons-academy.avif">
+                                <source type="image/webp" srcset="assets/images/projects/johnsons-academy.webp">
+                                <img src="assets/images/projects/johnsons-academy.png" alt="Johnson's Academy - modern educational institution website preview" class="portfolio-img" loading="lazy" decoding="async" width="400" height="220">
+                            </picture>
                             <span class="portfolio-category">Education</span>
                         </div>
                         <div class="portfolio-content">
@@ -289,7 +263,11 @@
                     <a href="https://savory-bites-restaurant-ten.vercel.app/" target="_blank" rel="noopener noreferrer" class="portfolio-card-link" aria-label="View Savory Bites Restaurant project">
                     <div class="portfolio-card fade-in">
                         <div class="portfolio-img-wrapper">
-                            <img src="assets/images/projects/savory-bites.png" alt="Savory Bites Restaurant - modern restaurant website design preview" class="portfolio-img" loading="lazy" width="400" height="220">
+                            <picture>
+                                <source type="image/avif" srcset="assets/images/projects/savory-bites.avif">
+                                <source type="image/webp" srcset="assets/images/projects/savory-bites.webp">
+                                <img src="assets/images/projects/savory-bites.png" alt="Savory Bites Restaurant - modern restaurant website design preview" class="portfolio-img" loading="lazy" decoding="async" width="400" height="220">
+                            </picture>
                             <span class="portfolio-category">Restaurant</span>
                         </div>
                         <div class="portfolio-content">
@@ -302,7 +280,11 @@
                     <a href="https://mohamed-bangura-portfolio.vercel.app" target="_blank" rel="noopener noreferrer" class="portfolio-card-link" aria-label="View Mohamed Bangura Portfolio project">
                     <div class="portfolio-card fade-in">
                         <div class="portfolio-img-wrapper">
-                            <img src="assets/images/projects/portfolio.png" alt="Mohamed Bangura - professional portfolio website preview" class="portfolio-img" loading="lazy" width="400" height="220">
+                            <picture>
+                                <source type="image/avif" srcset="assets/images/projects/portfolio.avif">
+                                <source type="image/webp" srcset="assets/images/projects/portfolio.webp">
+                                <img src="assets/images/projects/portfolio.png" alt="Mohamed Bangura - professional portfolio website preview" class="portfolio-img" loading="lazy" decoding="async" width="400" height="220">
+                            </picture>
                             <span class="portfolio-category">Portfolio</span>
                         </div>
                         <div class="portfolio-content">
@@ -319,7 +301,6 @@
             </div>
         </section>
 
-        <!-- Testimonials Section -->
         <section class="testimonials-section">
             <div class="container">
                 <div class="section-header fade-in">
@@ -341,7 +322,6 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
         <section class="cta-section">
             <div class="container">
                 <div class="cta-content fade-in">
@@ -359,10 +339,9 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo" aria-label="PP Studio Agency - Home">
-                        <img src="assets/images/logo/pp-logo.png" alt="PP Studio Agency Logo" width="50" height="50" loading="lazy">
+                        <img src="assets/images/logo/pp-logo-footer.webp" alt="PP Studio Agency Logo" width="50" height="50" loading="lazy" decoding="async">
                     </a>
                     <p>Premium frontend development agency crafting modern, responsive websites for forward-thinking businesses.</p>
-
                 </div>
                 <div>
                     <h4 class="footer-title">Quick Links</h4>
@@ -402,6 +381,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

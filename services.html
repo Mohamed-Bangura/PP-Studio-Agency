@@ -20,7 +20,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Services | PP Studio Agency - Frontend Web Development Services">
     <meta property="og:description" content="PP Studio Agency offers professional frontend web development services: business websites, portfolio sites, landing pages, and more. Modern UI/UX with clean code.">
-    <meta property="og:image" content="https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.png">
+    <meta property="og:image" content="https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.webp">
     <meta property="og:url" content="https://ppstudioagency.vercel.app/services.html">
     <meta property="og:site_name" content="PP Studio Agency">
     <meta property="og:locale" content="en_US">
@@ -29,7 +29,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Services | PP Studio Agency - Frontend Web Development Services">
     <meta name="twitter:description" content="PP Studio Agency offers professional frontend web development services: business websites, portfolio sites, landing pages, and more. Modern UI/UX with clean code.">
-    <meta name="twitter:image" content="https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.png">
+    <meta name="twitter:image" content="https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.webp">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -43,7 +43,7 @@
                 "url": "https://ppstudioagency.vercel.app/",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.png",
+                    "url": "https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.webp",
                     "width": 50,
                     "height": 50
                 },
@@ -75,8 +75,10 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 </head>
 <body>
     <!-- Skip to content link for accessibility -->
@@ -85,7 +87,7 @@
     <header class="header" id="header">
         <nav class="navbar container">
             <a href="index.html" class="logo" aria-label="PP Studio Agency - Home">
-                <img src="assets/images/logo/pp-logo.png" alt="PP Studio Agency Logo" width="50" height="50">
+                <img src="assets/images/logo/pp-logo.webp" alt="PP Studio Agency Logo" width="50" height="50">
             </a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -215,10 +217,9 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo" aria-label="PP Studio Agency - Home">
-                        <img src="assets/images/logo/pp-logo.png" alt="PP Studio Agency Logo" width="50" height="50" loading="lazy">
+                        <img src="assets/images/logo/pp-logo-footer.webp" alt="PP Studio Agency Logo" width="50" height="50" loading="lazy" decoding="async">
                     </a>
                     <p>Premium frontend development agency crafting modern, responsive websites for forward-thinking businesses.</p>
-
                 </div>
                 <div>
                     <h4 class="footer-title">Quick Links</h4>
@@ -258,6 +259,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

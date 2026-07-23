@@ -43,7 +43,7 @@
                 "url": "https://ppstudioagency.vercel.app/",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.png",
+                    "url": "https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.webp",
                     "width": 50,
                     "height": 50
                 },
@@ -75,8 +75,10 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 </head>
 <body>
     <!-- Skip to content link for accessibility -->
@@ -85,7 +87,7 @@
     <header class="header" id="header">
         <nav class="navbar container">
             <a href="index.html" class="logo" aria-label="PP Studio Agency - Home">
-                <img src="assets/images/logo/pp-logo.png" alt="PP Studio Agency Logo" width="50" height="50">
+                <img src="assets/images/logo/pp-logo.webp" alt="PP Studio Agency Logo" width="50" height="50">
             </a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -106,7 +108,6 @@
             <div class="container">
                 <span class="section-label">About Us</span>
                 <h1 class="page-title">Our Story</h1>
-
             </div>
         </section>
 
@@ -121,7 +122,11 @@
                         <p>Our approach combines creative design thinking with technical precision, ensuring every website we build is visually stunning, fast-loading, and fully responsive across all devices.</p>
                     </div>
                     <div class="about-intro-image fade-in">
-                        <img src="assets/images/about/about-preview.jpg" alt="PP Studio Agency team working on responsive frontend web development projects" loading="lazy" width="600" height="400">
+                        <picture>
+                            <source type="image/avif" srcset="assets/images/about/about-preview.avif">
+                            <source type="image/webp" srcset="assets/images/about/about-preview.webp">
+                            <img src="assets/images/about/about-preview.jpg" alt="PP Studio Agency team working on responsive frontend web development projects" loading="lazy" decoding="async" width="600" height="400">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -192,10 +197,9 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo" aria-label="PP Studio Agency - Home">
-                        <img src="assets/images/logo/pp-logo.png" alt="PP Studio Agency Logo" width="50" height="50" loading="lazy">
+                        <img src="assets/images/logo/pp-logo-footer.webp" alt="PP Studio Agency Logo" width="50" height="50" loading="lazy" decoding="async">
                     </a>
                     <p>Premium frontend development agency crafting modern, responsive websites for forward-thinking businesses.</p>
-
                 </div>
                 <div>
                     <h4 class="footer-title">Quick Links</h4>
@@ -235,6 +239,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

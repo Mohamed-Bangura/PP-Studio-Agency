@@ -43,7 +43,7 @@
                 "url": "https://ppstudioagency.vercel.app/",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.png",
+                    "url": "https://ppstudioagency.vercel.app/assets/images/logo/pp-logo.webp",
                     "width": 50,
                     "height": 50
                 },
@@ -75,8 +75,10 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
 </head>
 <body>
     <!-- Skip to content link for accessibility -->
@@ -85,7 +87,7 @@
     <header class="header" id="header">
         <nav class="navbar container">
             <a href="index.html" class="logo" aria-label="PP Studio Agency - Home">
-                <img src="assets/images/logo/pp-logo.png" alt="PP Studio Agency Logo" width="50" height="50">
+                <img src="assets/images/logo/pp-logo.webp" alt="PP Studio Agency Logo" width="50" height="50">
             </a>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -116,7 +118,11 @@
                     <a href="https://johnson-s-academy.vercel.app" target="_blank" rel="noopener noreferrer" class="portfolio-card-link" aria-label="View Johnson's Academy project">
                     <div class="portfolio-card fade-in">
                         <div class="portfolio-img-wrapper">
-                            <img src="assets/images/projects/johnsons-academy.png" alt="Johnson's Academy - modern educational institution website preview" class="portfolio-img" loading="lazy" width="400" height="220">
+                            <picture>
+                                <source type="image/avif" srcset="assets/images/projects/johnsons-academy.avif">
+                                <source type="image/webp" srcset="assets/images/projects/johnsons-academy.webp">
+                                <img src="assets/images/projects/johnsons-academy.png" alt="Johnson's Academy - modern educational institution website preview" class="portfolio-img" loading="lazy" decoding="async" width="400" height="220">
+                            </picture>
                             <span class="portfolio-category">Education</span>
                         </div>
                         <div class="portfolio-content">
@@ -129,7 +135,11 @@
                     <a href="https://savory-bites-restaurant-ten.vercel.app/" target="_blank" rel="noopener noreferrer" class="portfolio-card-link" aria-label="View Savory Bites Restaurant project">
                     <div class="portfolio-card fade-in">
                         <div class="portfolio-img-wrapper">
-                            <img src="assets/images/projects/savory-bites.png" alt="Savory Bites Restaurant - modern restaurant website design preview" class="portfolio-img" loading="lazy" width="400" height="220">
+                            <picture>
+                                <source type="image/avif" srcset="assets/images/projects/savory-bites.avif">
+                                <source type="image/webp" srcset="assets/images/projects/savory-bites.webp">
+                                <img src="assets/images/projects/savory-bites.png" alt="Savory Bites Restaurant - modern restaurant website design preview" class="portfolio-img" loading="lazy" decoding="async" width="400" height="220">
+                            </picture>
                             <span class="portfolio-category">Restaurant</span>
                         </div>
                         <div class="portfolio-content">
@@ -142,7 +152,11 @@
                     <a href="https://mohamed-bangura-portfolio.vercel.app" target="_blank" rel="noopener noreferrer" class="portfolio-card-link" aria-label="View Mohamed Bangura Portfolio project">
                     <div class="portfolio-card fade-in">
                         <div class="portfolio-img-wrapper">
-                            <img src="assets/images/projects/portfolio.png" alt="Mohamed Bangura - professional portfolio website preview" class="portfolio-img" loading="lazy" width="400" height="220">
+                            <picture>
+                                <source type="image/avif" srcset="assets/images/projects/portfolio.avif">
+                                <source type="image/webp" srcset="assets/images/projects/portfolio.webp">
+                                <img src="assets/images/projects/portfolio.png" alt="Mohamed Bangura - professional portfolio website preview" class="portfolio-img" loading="lazy" decoding="async" width="400" height="220">
+                            </picture>
                             <span class="portfolio-category">Portfolio</span>
                         </div>
                         <div class="portfolio-content">
@@ -173,10 +187,9 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="index.html" class="logo" aria-label="PP Studio Agency - Home">
-                        <img src="assets/images/logo/pp-logo.png" alt="PP Studio Agency Logo" width="50" height="50" loading="lazy">
+                        <img src="assets/images/logo/pp-logo-footer.webp" alt="PP Studio Agency Logo" width="50" height="50" loading="lazy" decoding="async">
                     </a>
                     <p>Premium frontend development agency crafting modern, responsive websites for forward-thinking businesses.</p>
-
                 </div>
                 <div>
                     <h4 class="footer-title">Quick Links</h4>
@@ -216,6 +229,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
