@@ -1450,6 +1450,133 @@ section {
     transform: scale(1.05);
 }
 
+/* ===== FOUNDER / TEAM SECTION ===== */
+.founder-section {
+    background-color: var(--bg-light);
+    padding: var(--section-padding);
+}
+
+.founder-card {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    padding: 3rem;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.founder-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-card-hover);
+}
+
+.founder-image-wrapper {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.founder-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+}
+
+.founder-image-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(to top, rgba(23, 21, 26, 0.4), transparent);
+    pointer-events: none;
+}
+
+.founder-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.founder-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    margin-bottom: 0.5rem;
+    font-family: var(--font-heading);
+}
+
+.founder-title {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--burgundy);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.02em;
+}
+
+.founder-bio {
+    color: var(--text-body);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.founder-bio p {
+    margin-bottom: 1rem;
+    color: var(--text-body);
+}
+
+.founder-bio p:last-child {
+    margin-bottom: 0;
+}
+
+.founder-divider {
+    width: 48px;
+    height: 3px;
+    background: var(--burgundy);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.founder-credentials {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.founder-credential-item {
+    text-align: center;
+}
+
+.founder-credential-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--burgundy);
+    font-family: var(--font-heading);
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.founder-credential-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
 /* ===== BACKGROUND VARIANTS ===== */
 .bg-light {
     background-color: var(--bg-light);
