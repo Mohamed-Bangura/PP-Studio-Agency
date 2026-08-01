@@ -109,9 +109,9 @@
         align-items: center;
         justify-content: space-between;
         gap: 1rem;
-        padding-bottom: 16px;
+        padding-bottom: 14px;
         border-bottom: 1px solid var(--border-light);
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
 
     .nav-drawer-logo {
@@ -170,7 +170,7 @@
     }
 
     .nav-menu .nav-item + .nav-item {
-        margin-top: 10px;
+        margin-top: 6px;
     }
 
     .nav-menu .nav-link {
@@ -178,7 +178,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-        padding: 12px 14px;
+        padding: 10px 14px;
         font-size: 17px;
         font-weight: 600;
         line-height: 1.3;
