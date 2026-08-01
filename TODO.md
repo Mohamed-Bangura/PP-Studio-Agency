@@ -1,16 +1,14 @@
-# Task: Update Founder Section with Core Values Cards
+# Task: Improve Mobile Navigation Menu UI
 
 ## Goal
-Replace the founder statistics (20+ Projects / 3+ Years / 100% Satisfaction) with a modern 4-card "Core Values" section in the Meet the Founder area on index.html and about.html — then commit and push to main.
+Upgrade the mobile slide-in navigation menu to a cleaner, more premium look: larger tap targets, 18px links, full-width items, accent hover/tap effect, close button, header divider, and smooth slide animations — without changing navigation items or functionality.
 
 ## Steps
 
-- [x] 1. Update `index.html` — remove `.founder-credentials`, add `.founder-values` block (4 cards)
-- [x] 2. Update `about.html` — same change as index.html
-- [x] 3. Update `css/style.css` — remove credential styles, add `.founder-values` styles
-- [x] 4. Update `css/responsive.css` — remove credential responsive rules, add values grid responsive rules
-- [x] 5. Review all modified files for errors
-- [x] 6. Test locally (desktop + mobile layout check)
-- [x] 7. Stage, commit ("Updated founder section with core values cards"), push to `main`
-- [x] 8. Confirm push success on GitHub
+- [ ] 1. Update `css/responsive.css` — improve mobile nav panel styling (spacing, 18px links, hover accent, close btn, slide animation, divider)
+- [ ] 2. Update all 6 HTML pages — add `nav-close` (×) button inside `nav-menu`
+- [ ] 3. Update `js/main.js` — close menu when `nav-close` clicked
+- [ ] 4. Review + test mobile responsiveness
+- [ ] 5. Commit ("Improve mobile navigation spacing and UI") and push to `main`
+- [ ] 6. Verify Vercel deployment + live site reflects changes
 
