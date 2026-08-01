@@ -55,12 +55,12 @@
         max-width: 320px;
     }
 
-    .founder-credentials {
-        gap: 1.5rem;
+    .founder-values-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .founder-credential-value {
-        font-size: 1.5rem;
+    .founder-value-card {
+        padding: 1.25rem 1rem;
     }
 }
 
@@ -205,8 +205,8 @@
         margin-right: auto;
     }
 
-    .founder-credentials {
-        justify-content: center;
+    .founder-values-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -323,13 +323,8 @@
         font-size: 0.9rem;
     }
 
-    .founder-credentials {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .founder-credential-value {
-        font-size: 1.35rem;
+    .founder-values-grid {
+        grid-template-columns: 1fr;
     }
 }
 

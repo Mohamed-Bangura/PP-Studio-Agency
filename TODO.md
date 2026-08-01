@@ -1,14 +1,16 @@
-# TODO: Update PP Studio Agency - Add Founder & CEO Profile
+# Task: Update Founder Section with Core Values Cards
+
+## Goal
+Replace the founder statistics (20+ Projects / 3+ Years / 100% Satisfaction) with a modern 4-card "Core Values" section in the Meet the Founder area on index.html and about.html — then commit and push to main.
 
 ## Steps
 
-- [x] 1. Add `.founder-section` and related CSS to `style.css`
-- [x] 2. Add responsive styles for founder section to `responsive.css`
-- [x] 3. Update `index.html` — About Preview text + New Founder section + Person JSON-LD
-- [x] 4. Update `about.html` — About Intro text + Founder section + Person JSON-LD
-- [x] 5. Update `contact.html` — Add founder credential + Person JSON-LD
-- [x] 6. Update `services.html` — Add Person JSON-LD
-- [x] 7. Update `portfolio.html` — Add Person JSON-LD
-- [x] 8. Update `pricing.html` — Add Person JSON-LD
-- [x] 9. Push changes to GitHub
+- [x] 1. Update `index.html` — remove `.founder-credentials`, add `.founder-values` block (4 cards)
+- [x] 2. Update `about.html` — same change as index.html
+- [x] 3. Update `css/style.css` — remove credential styles, add `.founder-values` styles
+- [x] 4. Update `css/responsive.css` — remove credential responsive rules, add values grid responsive rules
+- [x] 5. Review all modified files for errors
+- [ ] 6. Test locally (desktop + mobile layout check)
+- [ ] 7. Stage, commit ("Updated founder section with core values cards"), push to `main`
+- [ ] 8. Confirm push success on GitHub
 
