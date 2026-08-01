@@ -10,7 +10,7 @@ Replace the founder statistics (20+ Projects / 3+ Years / 100% Satisfaction) wit
 - [x] 3. Update `css/style.css` — remove credential styles, add `.founder-values` styles
 - [x] 4. Update `css/responsive.css` — remove credential responsive rules, add values grid responsive rules
 - [x] 5. Review all modified files for errors
-- [ ] 6. Test locally (desktop + mobile layout check)
-- [ ] 7. Stage, commit ("Updated founder section with core values cards"), push to `main`
-- [ ] 8. Confirm push success on GitHub
+- [x] 6. Test locally (desktop + mobile layout check)
+- [x] 7. Stage, commit ("Updated founder section with core values cards"), push to `main`
+- [x] 8. Confirm push success on GitHub
 
