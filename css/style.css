@@ -218,10 +218,14 @@ p {
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     object-fit: cover;
+    background-color: #FFFFFF;
+    padding: 4px;
+    border: 1px solid var(--border-light);
+    box-shadow: var(--shadow-sm);
     display: block;
 }
 
@@ -575,6 +579,9 @@ section {
     position: relative;
     overflow: hidden;
     box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .service-card::before {
@@ -629,6 +636,7 @@ section {
     font-size: 0.9rem;
     margin-bottom: 0;
     line-height: 1.6;
+    flex: 1;
 }
 
 /* ===== WHY CHOOSE US SECTION ===== */
@@ -746,6 +754,9 @@ section {
     overflow: hidden;
     transition: var(--transition);
     box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .portfolio-card:hover {
@@ -786,6 +797,9 @@ section {
 
 .portfolio-content {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .portfolio-content h3 {
@@ -796,22 +810,32 @@ section {
 .portfolio-content p {
     color: var(--text-muted);
     font-size: 0.9rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
 }
 
-.portfolio-link {
-    display: inline-flex;
-    align-items: center;
+.portfolio-tech {
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
-    color: var(--burgundy);
-    font-weight: 500;
-    font-size: 0.9rem;
-    transition: var(--transition);
+    margin-bottom: 1.5rem;
 }
 
-.portfolio-link:hover {
-    color: var(--burgundy-light);
+.tech-tag {
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--burgundy);
+    background: var(--burgundy-subtle);
+    border: 1px solid var(--burgundy-glow);
+    border-radius: 20px;
+}
+
+.portfolio-actions {
+    display: flex;
     gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: auto;
 }
 
 /* ===== TESTIMONIALS SECTION ===== */
@@ -998,57 +1022,9 @@ section {
     background-color: var(--bg-light);
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
-}
-
-.contact-info h2 {
-    margin-bottom: 1rem;
-}
-
-.contact-info > p {
-    color: var(--text-muted);
-    margin-bottom: 2rem;
-}
-
-.contact-details {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.contact-item-icon {
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--burgundy-subtle);
-    border-radius: var(--radius-sm);
-    color: var(--burgundy);
-    font-size: 1rem;
-    flex-shrink: 0;
-}
-
-.contact-item-text strong {
-    display: block;
-    color: var(--text-heading);
-    font-size: 0.9rem;
-    margin-bottom: 0.15rem;
-}
-
-.contact-item-text span {
-    color: var(--text-muted);
-    font-size: 0.85rem;
+.contact-form-wrapper {
+    max-width: 640px;
+    margin: 0 auto;
 }
 
 .contact-form-container {
@@ -1059,8 +1035,18 @@ section {
     box-shadow: var(--shadow-md);
 }
 
+.contact-form-container .section-label {
+    margin-bottom: 0.5rem;
+}
+
 .contact-form-container h3 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.contact-form-intro {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
 }
 
 /* ===== FORM STYLES ===== */
@@ -1310,6 +1296,9 @@ section {
     padding: 2.5rem;
     transition: var(--transition);
     box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .service-detail-card:hover {
@@ -1383,7 +1372,7 @@ section {
 }
 
 .footer-brand p {
-    color: #E8E8E8;
+    color: #F2F2F2;
     font-size: 0.9rem;
     margin-top: 1rem;
     max-width: 300px;
@@ -1404,7 +1393,7 @@ section {
 }
 
 .footer-links a {
-    color: #E8E8E8;
+    color: #F2F2F2;
     font-size: 0.9rem;
     transition: var(--transition);
 }
@@ -1417,42 +1406,28 @@ section {
     text-align: center;
     padding: 1.5rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.06);
-    color: #E8E8E8;
+    color: #F2F2F2;
     font-size: 0.85rem;
 }
 
 .footer-credit {
-    color: #E8E8E8;
+    color: #F2F2F2;
     margin-top: 0.5rem;
 }
 
 .footer-credit span {
-    color: var(--burgundy-light);
+    color: inherit;
     font-weight: 600;
+    transition: var(--transition);
+}
+
+.footer-credit span:hover {
+    color: var(--burgundy-light);
 }
 
 .footer-bottom p {
     color: inherit;
     margin-bottom: 0;
-}
-
-/* ===== PORTFOLIO CARD LINK ===== */
-.portfolio-card-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    border-radius: var(--radius-lg);
-    transition: var(--transition);
-}
-
-.portfolio-card-link:hover .portfolio-card {
-    transform: translateY(-8px);
-    border-color: var(--border-hover);
-    box-shadow: var(--shadow-card-hover);
-}
-
-.portfolio-card-link:hover .portfolio-img {
-    transform: scale(1.05);
 }
 
 /* ===== FOUNDER / TEAM SECTION ===== */

@@ -125,6 +125,10 @@
         height: 40px;
         border-radius: 50%;
         object-fit: cover;
+        background-color: #FFFFFF;
+        padding: 3px;
+        border: 1px solid var(--border-light);
+        box-shadow: var(--shadow-sm);
         display: block;
     }
 
@@ -279,9 +283,8 @@
     }
 
     /* Contact */
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
+    .contact-form-wrapper {
+        max-width: 560px;
     }
 
     /* FAQ */

@@ -65,7 +65,7 @@ PP-Studio-Agency/
 |------|------|------------|
 | **Home** | `index.html` | Hero with background image, about preview, services grid, why choose us, process timeline, featured projects, testimonials, CTA |
 | **About** | `about.html` | Agency intro, who we are, mission & vision, core values |
-| **Services** | `services.html` | 7 frontend services: Business Websites, Portfolio Websites, Landing Pages, Restaurant Websites, School & Educational Websites, Church Websites, Responsive Website Redesign |
+| **Services** | `services.html` | 6 frontend services: Business Websites, Portfolio Websites, Landing Pages, Restaurant Websites, School & Educational Websites, Responsive Website Redesign |
 | **Portfolio** | `portfolio.html` | Project showcase with images and live demo links |
 | **Pricing** | `pricing.html` | Starter ($30), Business ($80), Premium (Custom) packages |
 | **Contact** | `contact.html` | Contact form (Web3Forms) + FAQ accordion section |
