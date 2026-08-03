@@ -60,7 +60,7 @@
     }
 
     .founder-value-card {
-        padding: 1.25rem 1rem;
+        padding: 1.5rem;
     }
 }
 
@@ -68,6 +68,10 @@
 @media (max-width: 768px) {
     :root {
         --section-padding: 4rem 0;
+    }
+
+    .page-about {
+        --section-padding: 80px 0;
     }
 
     h1 { font-size: 2.5rem; }
@@ -204,15 +208,15 @@
         transform: translateY(-50%) scaleY(0);
         width: 3px;
         height: 55%;
-        background: var(--burgundy);
+        background: var(--gold);
         border-radius: 0 3px 3px 0;
         transition: transform 0.25s ease;
     }
 
     .nav-menu .nav-link:hover,
     .nav-menu .nav-link.active {
-        color: var(--burgundy);
-        background: var(--burgundy-subtle);
+        color: var(--gold);
+        background: var(--gold-subtle);
         padding-left: 20px;
     }
 
@@ -338,6 +342,10 @@
     :root {
         --section-padding: 3.5rem 0;
         --container-padding: 1rem;
+    }
+
+    .page-about {
+        --section-padding: 64px 0;
     }
 
     h1 { font-size: 2rem; }
