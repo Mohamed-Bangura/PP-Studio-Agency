@@ -48,11 +48,11 @@
     }
 
     .founder-name {
-        font-size: 1.75rem;
+        font-size: 2.5rem;
     }
 
     .founder-image-wrapper {
-        max-width: 320px;
+        max-width: 340px;
     }
 
     .founder-values-grid {
@@ -323,17 +323,17 @@
         text-align: center;
     }
 
+    .founder-name {
+        font-size: 2.25rem;
+    }
+
     .founder-image-wrapper {
-        max-width: 280px;
+        max-width: 300px;
     }
 
     .founder-divider {
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .founder-values-grid {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -443,11 +443,11 @@
     }
 
     .founder-image-wrapper {
-        max-width: 240px;
+        max-width: 260px;
     }
 
     .founder-name {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .founder-title {
