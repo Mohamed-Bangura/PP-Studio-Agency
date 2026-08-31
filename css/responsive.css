@@ -477,3 +477,29 @@
         padding: 2rem 1.5rem;
     }
 }
+
+/* ===== AGENCY SERVICE RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .agency-service-heading {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .agency-service-number {
+        font-size: 2.5rem;
+    }
+
+    .agency-service-heading h3 {
+        font-size: 1.6rem;
+    }
+
+    .service-card-main {
+        padding-top: 3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .agency-service-number {
+        font-size: 2rem;
+    }
+}

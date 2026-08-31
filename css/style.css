@@ -1737,3 +1737,102 @@ section {
 .mt-3 { margin-top: 3rem; }
 .text-muted { color: var(--text-muted); }
 .text-white { color: var(--text-white); }
+
+/* ===== AGENCY SERVICE MAIN CARDS (HOMEPAGE) ===== */
+.service-card-main {
+    text-align: left;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 3rem;
+}
+
+.service-card-main .service-icon {
+    margin: 0 0 1.5rem;
+}
+
+.service-card-main h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+}
+
+.service-card-main p {
+    font-size: 0.95rem;
+}
+
+.service-card-number {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--burgundy-subtle);
+    line-height: 1;
+    transition: var(--transition);
+}
+
+.service-card-main:hover .service-card-number {
+    color: var(--burgundy);
+}
+
+/* ===== AGENCY SERVICE BLOCKS (SERVICES PAGE) ===== */
+.agency-service-block {
+    margin-bottom: 5rem;
+}
+
+.agency-service-block:last-child {
+    margin-bottom: 0;
+}
+
+.agency-service-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.agency-service-number {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--burgundy);
+    line-height: 1;
+    flex-shrink: 0;
+    letter-spacing: -0.02em;
+}
+
+.agency-service-heading h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.agency-service-heading p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin-bottom: 0;
+    max-width: 560px;
+}
+
+/* ===== PRICING NOTE ===== */
+.pricing-note {
+    margin-top: 3rem;
+    padding: 2rem;
+    text-align: center;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing-note p {
+    color: var(--text-body);
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}

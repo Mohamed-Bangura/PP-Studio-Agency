@@ -6,7 +6,7 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-**PP Studio Agency** is a premium frontend web development agency website — a 6-page, fully responsive brand showcase built with vanilla HTML5, CSS3, and JavaScript. The site features a light-dark hybrid theme with burgundy accent, scroll-triggered animations, and a Web3Forms-powered contact form.
+**PP Studio Agency** is a digital creative agency website — a 6-page, fully responsive brand showcase built with vanilla HTML5, CSS3, and JavaScript. The site features a light-dark hybrid theme with burgundy accent, scroll-triggered animations, and a Web3Forms-powered contact form.
 
 🌐 **Live Site:** [https://ppstudioagency.vercel.app](https://ppstudioagency.vercel.app)
 
@@ -14,7 +14,7 @@
 
 ## Description
 
-A clean, professional 6-page website for PP Studio Agency showcasing frontend web development services. Features a light-dark hybrid design theme with burgundy accent, smooth scroll animations, responsive layouts, and a Web3Forms-powered contact form.
+A clean, professional 6-page website for PP Studio Agency showcasing its digital creative agency services: website development, graphic design, promotional videos, and social media management. Features a light-dark hybrid design theme with burgundy accent, smooth scroll animations, responsive layouts, and a Web3Forms-powered contact form.
 
 ## Tech Stack
 
@@ -65,9 +65,9 @@ PP-Studio-Agency/
 |------|------|------------|
 | **Home** | `index.html` | Hero with background image, about preview, services grid, why choose us, process timeline, featured projects, testimonials, CTA |
 | **About** | `about.html` | Agency intro, who we are, mission & vision, core values |
-| **Services** | `services.html` | 6 frontend services: Business Websites, Portfolio Websites, Landing Pages, Restaurant Websites, School & Educational Websites, Responsive Website Redesign |
+| **Services** | `services.html` | 4 agency services: Website Development, Graphic Design, Promotional Videos, Social Media Management |
 | **Portfolio** | `portfolio.html` | Project showcase with images and live demo links |
-| **Pricing** | `pricing.html` | Starter ($30), Business ($80), Premium (Custom) packages |
+| **Pricing** | `pricing.html` | Website Development packages: Starter ($40), Business ($90), Premium (Custom) |
 | **Contact** | `contact.html` | Contact form (Web3Forms) + FAQ accordion section |
 
 ## Features
@@ -131,7 +131,7 @@ No environment variables are needed. The Web3Forms access key is embedded in `js
 
 ## Author
 
-**PP Studio Agency** — Modern frontend development agency crafting responsive, high-performance websites.
+**PP Studio Agency** — Digital creative agency helping businesses build, present, promote and grow their digital presence.
 
 - Website: [https://ppstudioagency.vercel.app](https://ppstudioagency.vercel.app)
 - GitHub: [@ppstudioagency](https://github.com/ppstudioagency)
