@@ -67,7 +67,7 @@ PP-Studio-Agency/
 | **About** | `about.html` | Agency intro, who we are, mission & vision, core values |
 | **Services** | `services.html` | 4 agency services: Website Development, Graphic Design, Promotional Videos, Social Media Management |
 | **Portfolio** | `portfolio.html` | Project showcase with images and live demo links |
-| **Pricing** | `pricing.html` | Website Development packages: Starter ($40), Business ($90), Premium (Custom) |
+| **Pricing** | `pricing.html` | Website Development packages: Starter ($50), Business ($100), Premium (Custom) |
 | **Contact** | `contact.html` | Contact form (Web3Forms) + FAQ accordion section |
 
 ## Features
