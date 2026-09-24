@@ -34,6 +34,3 @@ build/
 
 # Optional - npm cache
 .npm/
-
-# Unoptimized images (replaced by WebP)
-assets/images/hero/hero-image.png

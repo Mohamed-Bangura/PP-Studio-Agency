@@ -37,8 +37,7 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
     <!-- Preload critical hero image (LCP element) -->
-    <link rel="preload" as="image" type="image/avif" href="assets/images/hero/hero-image.avif" fetchpriority="high">
-    <link rel="preload" as="image" type="image/webp" href="assets/images/hero/hero-image.webp" fetchpriority="high">
+    <link rel="preload" as="image" type="image/png" href="assets/images/hero/hero-image.png" fetchpriority="high">
 
     <!-- Preload critical fonts (above-the-fold text) -->
     <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYAZ9hiJ-Ek-_EeA.woff2" crossorigin>
@@ -92,21 +91,28 @@
 
     <main id="main-content">
         <section class="hero">
+            <div class="hero-glow" aria-hidden="true"></div>
             <picture class="hero-bg">
-                <source type="image/avif" media="(max-width: 768px)" srcset="assets/images/hero/hero-image-mobile.avif">
-                <source type="image/avif" srcset="assets/images/hero/hero-image.avif">
-                <source type="image/webp" media="(max-width: 768px)" srcset="assets/images/hero/hero-image-mobile.webp">
-                <source type="image/webp" srcset="assets/images/hero/hero-image.webp">
-                <img src="assets/images/hero/hero-image-fallback.jpg" alt="" width="1920" height="1080" fetchpriority="high" decoding="async" aria-hidden="true">
+                <source type="image/png" media="(max-width: 768px)" srcset="assets/images/hero/hero-image-mobile.png">
+                <source type="image/jpeg" media="(max-width: 768px)" srcset="assets/images/hero/hero-image-mobile.jpg">
+                <source type="image/png" srcset="assets/images/hero/hero-image.png">
+                <img src="assets/images/hero/hero-image-fallback.jpg" alt="PP Studio Agency digital workspace featuring a professional web design environment." width="1024" height="426" fetchpriority="high" decoding="async">
             </picture>
             <div class="container">
                 <div class="hero-content">
-                    <span class="section-label hero-animate">PP Studio Agency</span>
-                    <h1 class="hero-title hero-animate">BUILD. PROMOTE. GROW.<br><span class="highlight">Your Complete Digital Presence</span></h1>
-                    <p class="hero-subtitle hero-animate-delay">We help businesses build, present, promote and manage their digital presence through professional websites, graphic design, promotional videos and social media management.</p>
+                    <span class="hero-badge hero-animate"><i class="fas fa-sparkles"></i> Sierra Leone &amp; Global Digital Agency</span>
+                    <h1 class="hero-title hero-animate">BUILD YOUR DIGITAL PRESENCE.<br><span class="highlight">Websites &amp; Digital Solutions</span></h1>
+                    <p class="hero-subtitle hero-animate-delay">Professional websites and digital solutions designed to help your business grow. We build, present, promote and manage your complete digital presence.</p>
                     <div class="hero-buttons hero-animate-delay-2">
-                        <a href="contact.html" class="btn btn-primary">Start Your Project</a>
-                        <a href="services.html" class="btn btn-secondary">View Our Services</a>
+                        <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Start Your Project</a>
+                        <a href="portfolio.html" class="btn btn-secondary"><i class="fas fa-layer-group"></i> View Our Work</a>
+                    </div>
+                    <div class="hero-services-tagline hero-animate-delay-2">
+                        <span><i class="fas fa-check-circle"></i> Web Design</span>
+                        <span class="tagline-divider">•</span>
+                        <span><i class="fas fa-check-circle"></i> Digital Solutions</span>
+                        <span class="tagline-divider">•</span>
+                        <span><i class="fas fa-check-circle"></i> Business Growth</span>
                     </div>
                 </div>
             </div>
